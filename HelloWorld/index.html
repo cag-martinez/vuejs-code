@@ -21,7 +21,7 @@
         <div id='app-3'>
             <span v-if='seen'> Now you see me!</span>
         </div>
-
+<!-- todggle -->
         <div id='demo'>
             <button v-on:click='show = !show'>
                 Toggle
@@ -29,6 +29,16 @@
             <transition name='fade'>
                 <p v-if='show'>Hello</p>
             </transition>
+        </div>
+        
+        <hr>
+<!-- todo list -->
+        <div id="app-4">
+            <ol>
+                <li v-for='todo in todos' >
+                    {{ todo.text }}
+                </li>
+            </ol>
         </div>
 
         <script src="index.js"></script> 
