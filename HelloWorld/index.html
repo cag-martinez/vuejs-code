@@ -18,6 +18,19 @@
             </span>
         </div>
 
+        <div id='app-3'>
+            <span v-if='seen' v-bind:title='message'> Now you see me!</span>
+        </div>
+
+        <div id='demo'>
+            <button v-on:click='show = !show'>
+                Toggle
+            </button>
+            <transition name='fade'>
+                <p v-if='show'>Hello</p>
+            </transition>
+        </div>
+
         <script src="index.js"></script> 
 
     </body>
