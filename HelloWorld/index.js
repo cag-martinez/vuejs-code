@@ -21,3 +21,11 @@ var app3 = new Vue ({
         seen: false
     } 
 })
+
+// Transitioning
+var transition = new Vue ({
+    el: '#demo',
+    data: {
+        show: true
+    }
+})
