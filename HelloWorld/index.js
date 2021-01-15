@@ -15,10 +15,9 @@ var app2 = new Vue ({
 // Here i can look in the console and change seen: true to 
 // app3.seen = false to remove the sentence
 var app3 = new Vue ({
-    id: '#app-3',
+    el: '#app-3',
     data: {
-        
-        seen: false
+        seen: true
     } 
 })
 
