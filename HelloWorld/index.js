@@ -28,3 +28,16 @@ var transition = new Vue ({
         show: true
     }
 })
+
+// Ordered list
+
+var list = new Vue ({
+    el: "#app-4",
+    data: {
+        todos: [
+            {text: "Learn to code"},
+            {text: "Larn Vue.js"},
+            {text: "Use what i learned to create cool stuff"}
+        ]
+    }
+})
