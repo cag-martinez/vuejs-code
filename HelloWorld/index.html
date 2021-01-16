@@ -45,6 +45,13 @@
             </li>
         </ol>
     </div>
+    <hr>
+    <!-- Handling user input. v-on:click to reverse message -->
+    <div id="app-5">
+        <p>{{ message }}</p>
+        <!-- <input v-model="message"> -->
+        <button v-on:click='reverseMessag'>Reverse message!</button>
+    </div>
 
     <script src="index.js"></script>
 
