@@ -1,47 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <title> Hello WOrld </title>
-        <link rel="stylesheet" href="index.css"></link>
-        <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
-    </head>
-    <body>
 
-        <div id="app">
-            {{ message }}
-        </div>
+<head>
+    <title> Hello WOrld </title>
+    <link rel="stylesheet" href="index.css">
+    </link>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
+</head>
 
-        <div id='app-2'>
-            <span v-bind:title='message'>
-                If i hover over this, it will see my dynamically bound title!
-            </span>
-        </div>
+<body>
+    <!-- displaying hello vue -->
+    <div id="app">
+        {{ message }}
+    </div>
+    <hr>
+    <!-- Dinamically bound tittle. -->
+    <div id='app-2'>
+        <span v-bind:title='message'>
+            If i hover over this, it will see my dynamically bound title!
+        </span>
+    </div>
+    <hr>
+    <!-- if statement -->
+    <div id='app-3'>
+        <span v-if='seen'> Now you see me!</span>
+    </div>
+    <hr>
+    <!-- todggle. transitioning -->
+    <div id='demo'>
+        <button v-on:click='show = !show'>
+            Toggle
+        </button>
+        <transition name='fade'>
+            <p v-if='show'>Hello</p>
+        </transition>
+    </div>
+    <hr>
+    <!-- todo list -->
+    <div id="app-4">
+        <ol>
+            <li v-for='todo in todos'>
+                {{ todo.text }}
+            </li>
+        </ol>
+    </div>
 
-        <div id='app-3'>
-            <span v-if='seen'> Now you see me!</span>
-        </div>
-<!-- todggle -->
-        <div id='demo'>
-            <button v-on:click='show = !show'>
-                Toggle
-            </button>
-            <transition name='fade'>
-                <p v-if='show'>Hello</p>
-            </transition>
-        </div>
-        
-        <hr>
-<!-- todo list -->
-        <div id="app-4">
-            <ol>
-                <li v-for='todo in todos' >
-                    {{ todo.text }}
-                </li>
-            </ol>
-        </div>
+    <script src="index.js"></script>
 
-        <script src="index.js"></script> 
+</body>
 
-    </body>
 </html>
