@@ -1,3 +1,4 @@
+// Displaying message on the browser.
 var app = new Vue({
   el: "#app",
   data: {
@@ -5,6 +6,7 @@ var app = new Vue({
   },
 });
 
+//dinamically bound title.
 var app2 = new Vue({
   el: "#app-2",
   data: {
@@ -30,7 +32,6 @@ var transition = new Vue({
 });
 
 // Ordered list
-
 var list = new Vue({
   el: "#app-4",
   data: {
