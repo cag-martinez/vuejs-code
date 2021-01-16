@@ -52,7 +52,7 @@ var app5 = new Vue ({
     },
     methods: {
         reverseMessage: function() {
-            this.messsage= this.message.split('').reverse().join('')
+            this.message= this.message.split('').reverse().join('')
         }
     }
 })
