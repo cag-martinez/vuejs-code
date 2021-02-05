@@ -56,3 +56,16 @@ var app5 = new Vue ({
         }
     }
 })
+
+
+//Animation
+
+const Demo = {
+  data() {
+    return {
+      noActivated: false
+    }
+  }
+}
+
+Vue.createApp(Demo).mount('#demo')

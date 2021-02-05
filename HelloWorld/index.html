@@ -52,6 +52,15 @@
         <input v-model="message">
         <button v-on:click='reverseMessage'>Reverse message!</button>
     </div>
+    <hr>
+    <!--Animation-->
+    <div id='demo'>
+        Click me!!
+    </div>
+    <div :class="{ shake: noShake }">
+        <button @click="noActivated = true"> Click me</button>
+        <span v-if="notActivated">Nooo!!</span>
+    </div>
 
     <script src="index.js"></script>
 
