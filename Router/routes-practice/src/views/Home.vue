@@ -39,5 +39,6 @@ export default {
   border: 10px;
   padding: 5px;
   flex-wrap: wrap;
+  justify-content: center;
 }
 </style>
