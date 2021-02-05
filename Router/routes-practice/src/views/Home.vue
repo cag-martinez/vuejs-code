@@ -1,18 +1,27 @@
 <template>
   <div class="home">
-    <!-- <img alt="Vue logo" src="../assets/logo.png" /> -->
-    <HelloWorld msg="Welcome to Your Vue.js App" />
+    <!-- using a v-for directive to loop through all of m y destinations in store.js -->
+    <!-- Every time i use the V-for directive, i have to use a :key attribute to know which element is which -->
+    <div v-for="destination in destinations" :key="destination.name">
+      <router-link :to="destination.slug">
+        <h2>{{ destination.name }}</h2>
+      </router-link>
+
+    </div>
   </div>
 </template>
 
 <script>
 // @ is an alias to /src
-import HelloWorld from "@/components/HelloWorld.vue";
+import store from "@/store.js";
 
 export default {
-  name: "Home",
-  components: {
-    HelloWorld
+  name: "home",
+  components: {},
+  data(){
+    return{
+      destinations: store.destinations
+    };
   }
 };
 </script>
