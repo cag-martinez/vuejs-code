@@ -41,4 +41,12 @@ export default {
   flex-wrap: wrap;
   justify-content: center;
 }
+ .home{
+   max-width: 1400px;
+   margin: auto;
+ }
+
+ img {
+   max-width: 250px;
+ }
 </style>
