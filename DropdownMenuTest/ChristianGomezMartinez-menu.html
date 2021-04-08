@@ -5,16 +5,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Christian Gomez Martinez Menu Challenge</title>
     <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
         body{
-            background: url(http://www.getuwired.com/devtest/Death_to_stock_photography_Vibrant.jpg) no-repeat center center fixed;
+            background-image: url(http://www.getuwired.com/devtest/Death_to_stock_photography_Vibrant.jpg);
+            background-position: center;
+            background-size: cover;
+            background-position:bottom;
         }
         .navbar{
-            background-color: bisque;
+            background-color: white;
+            text-align: center;
         }
-        .navbar a {
+        /* .navbar li {
             float: right;
 
-        }
+        } */
         .navbar a:hover{
             background-color: rgb(52, 155, 90);
             color: white;
@@ -22,14 +30,15 @@
     </style>
 </head>
 <body>
-<div class="navbar">
-    <a class="getuwired">GETUWIRED<a>
-    <a class="about" href="#">ABOUT</a>
-    <a class="locations" href="#">LOCATIONS</a>
-    <a class="products" href="#">PRODUCTS</a>
-    <a class="blog" href="#">BLOG</a>
-    <a class="contact" href="#">CONTACT</a>
+    
+<ul class="navbar">
+    <li class="getuwired"><a>GETUWIRED</a></li>
+    <li class="about" href="#">ABOUT</li>
+    <li class="locations" href="#">LOCATIONS</li>
+    <li class="products" href="#">PRODUCTS</li>
+    <li class="blog" href="#">BLOG</li>
+    <li class="contact" href="#">CONTACT</li>
+    </ul>
 
-</div>
 </body>
 </html>
