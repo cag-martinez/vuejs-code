@@ -68,6 +68,9 @@
         li.locations {
             display: inline-block;
         }
+        li.products {
+            display: inline-block;
+        }
 
         .aboutSubMenu {
             display: none;
@@ -89,6 +92,9 @@
             display: block;
         }
         .locations:hover .aboutSubMenu{
+            display: block;
+        }
+        .products:hover .aboutSubMenu{
             display: block;
         }
     </style>
@@ -116,9 +122,22 @@
                     <a href="#">PORTLAND, OR</a>
                 </div>
         </li>
-        <li class="products" href="#">PRODUCTS</li>
-        <li class="blog" href="#">BLOG</li>
-        <li class="contact" href="#">CONTACT</li>
+        <li class="products"><a href="#">PRODUCTS</a>
+        <div class="aboutSubMenu">
+            <a href="#">NEW ARRIVALS</a>
+            <a href="#">FEATURED</a>
+            <a href="#">TOP RATED</a>
+            <a href="#">HIS</a>
+            <a href="#">HERS</a>
+            <a href="#">KIDS</a>
+            <a href="#">ACCESSORIES</a>
+            <a href="#">SPRING CATALOG</a>
+            <a href="#">THE ESSENTIALS</a>
+            <a href="#">SALE</a>
+        </div>
+        </li>
+        <li class="blog"><a href="#">BLOG</a></li>
+        <li class="contact"><a href="#">CONTACT</a></li>
     </ul>
 
 </body>
