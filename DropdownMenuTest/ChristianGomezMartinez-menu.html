@@ -27,17 +27,25 @@
             list-style: none;
             text-align: center;
             overflow: hidden;
+            padding-bottom: -5px;
 
         }
 
-        ul li:hover ul{
-            display: inline-block;
-        }
+        .navbar:after {
+  display:block;
+  content: '';
+  border-bottom: solid 12px rgb(102, 205, 140);  
+  transform: scaleX(0);  
+  transition: transform 250ms ease-in-out;
+}
+.navbar:hover:after { transform: scaleX(1); }
+.navbar.fromRight:after{ transform-origin:100% 50%; }
+.navbar.fromLeft:after{  transform-origin:  0% 50%; }
 
         li {
             display: inline-block;
             text-align: center;
-            padding: 14px 16px;
+            padding: 14px 16px 14px 20px;
             border-top: 10px;
             margin-top: 20px;
             border-radius: 5px 5px 0 0;
@@ -84,8 +92,9 @@
             background-color: rgb(102, 205, 140);
             z-index: 1;
             margin-top: 14px;
-            margin-left: -16px;
+            margin-left: -20px;
             border-radius: 0 5px 5px 5px;
+            padding-top: 13px;
         }
 
         .aboutSubMenu a {
