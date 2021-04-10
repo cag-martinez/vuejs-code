@@ -24,11 +24,14 @@
 
         ul {
             background-color: white;
-            list-style-type: none;
+            list-style: none;
             text-align: center;
             overflow: hidden;
         }
 
+        ul li:hover ul{
+            display: inline-block;
+        }
 
         li {
             display: inline-block;
@@ -49,15 +52,11 @@
         }
 
         li:hover {
-            border-bottom: rgb(52, 155, 90);
+            border-bottom: rgb(102, 205, 140);
         }
 
-        /* .navbar li {
-            float: right;
-
-        } */
         li:hover {
-            background-color: rgb(52, 155, 90);
+            background-color: rgb(102, 205, 140);
             color: black;
 
         }
@@ -65,9 +64,11 @@
         li.about {
             display: inline-block;
         }
+
         li.locations {
             display: inline-block;
         }
+
         li.products {
             display: inline-block;
         }
@@ -76,8 +77,10 @@
             display: none;
             position: absolute;
             width: inherit;
-            background-color: rgb(52, 155, 90);
+            background-color: rgb(102, 205, 140);
             z-index: 1;
+            margin-top: 14px;
+            margin-left: -16px;
         }
 
         .aboutSubMenu a {
@@ -86,65 +89,65 @@
             text-decoration: none;
             display: block;
             text-align: center;
-            
+
         }
-        .aboutSubMenu a:hover{
-            background-color: greenyellow;
+
+        .aboutSubMenu a:hover {
+            background-color: rgb(60, 116, 68);
         }
 
         .about:hover .aboutSubMenu {
             display: block;
-            
+
         }
-        .locations:hover .aboutSubMenu{
+
+        .locations:hover .aboutSubMenu {
             display: block;
         }
-        .products:hover .aboutSubMenu{
+
+        .products:hover .aboutSubMenu {
+            float: left;
             display: block;
         }
     </style>
 </head>
 
 <body>
-
     <ul class="navbar">
         <li class="getuwired">
             <h3>GETUWIRED</h3>
         </li>
         <li class="about"><a href="#">ABOUT</a>
             <div class="aboutSubMenu">
-
                 <a href="#">OUR STORY</a>
                 <a href="#">OUR COMMITMENTS TO YOU</a>
-
             </div>
         </li>
         <li class="locations"><a href="#">LOCATIONS</a>
-                <div class="aboutSubMenu">
-                    <a href="#">AUSTIN, TX</a>
-                    <a href="#">ATLANTA, GA</a>
-                    <a href="#">SEATTLE, WA</a>
-                    <a href="#">PORTLAND, OR</a>
-                </div>
+            <div class="aboutSubMenu">
+                <a href="#">AUSTIN, TX</a>
+                <a href="#">ATLANTA, GA</a>
+                <a href="#">SEATTLE, WA</a>
+                <a href="#">PORTLAND, OR</a>
+            </div>
         </li>
         <li class="products"><a href="#">PRODUCTS</a>
-        <div class="aboutSubMenu">
-            <a href="#">NEW ARRIVALS</a>
-            <a href="#">FEATURED</a>
-            <a href="#">TOP RATED</a>
-            <a href="#">HIS</a>
-            <a href="#">HERS</a>
-            <a href="#">KIDS</a>
-            <a href="#">ACCESSORIES</a>
-            <a href="#">SPRING CATALOG</a>
-            <a href="#">THE ESSENTIALS</a>
-            <a href="#">SALE</a>
-        </div>
+            <div class="aboutSubMenu">
+                <a href="#">NEW ARRIVALS</a>
+                <a href="#">FEATURED</a>
+                <a href="#">TOP RATED</a>
+                <a href="#">HIS</a>
+                <a href="#">HERS</a>
+                <a href="#">KIDS</a>
+                <a href="#">ACCESSORIES</a>
+                <a href="#">SPRING CATALOG</a>
+                <a href="#">THE ESSENTIALS</a>
+                <a href="#">SALE</a>
+            </div>
         </li>
         <li class="blog"><a href="#">BLOG</a></li>
         <li class="contact"><a href="#">CONTACT</a></li>
     </ul>
-
 </body>
 
 </html>
