@@ -3,3 +3,13 @@
     padding: 0px;
     box-sizing: border-box;
 }
+
+.container{
+    height: 100vh;
+    background-color: black;
+}
+
+.container img{
+    position: absolute;
+    
+}
