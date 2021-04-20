@@ -1,29 +1,36 @@
-*{
-    margin: 0px;
-    padding: 0px;
-    box-sizing: border-box;
-    color: cornsilk;
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  color: cornsilk;
 }
 
-.container{
-    height: 100vh;
-
+.container {
+  height: 100vh;
 }
 
-.container img{
-    width: 100%;
-    height: 100vh;
-    position: absolute;
-    /* this will make sure that the image does not look squished */
-    object-fit: cover;
-    z-index: -1;
+nav {
+  background-color: silver;
+  width: 100%;
+  position: absolute;
+  height: 10%;
+  align-items: center;
+  padding: 3rem, 10rem;
 }
 
-.mainTitle{
-    position: absolute;
-    top: 30%;
-    left: 50%;
-    font-size: 3rem;
-    transform: translate( -50%, -30%);
+.container img {
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  /* this will make sure that the image does not look squished */
+  object-fit: cover;
+  z-index: -1;
+}
 
+.mainTitle {
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  font-size: 3rem;
+  transform: translate(-50%, -30%);
 }
